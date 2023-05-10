@@ -1,0 +1,205 @@
+.about-us-child,
+.about-us-inner,
+.about-us-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1423px;
+  height: 341px;
+  object-fit: cover;
+}
+.about-us-inner,
+.about-us-item {
+  top: 399px;
+  left: 749px;
+  width: 292px;
+  height: 374px;
+}
+.about-us-inner {
+  top: 634px;
+  left: 1082px;
+  width: 299px;
+  height: 342px;
+}
+.about-us-child1,
+.about-us-child2,
+.about-us-child3,
+.rectangle-div {
+  position: absolute;
+  top: 1335px;
+  left: 48px;
+  background-color: var(--color-cornflowerblue-200);
+  width: 418px;
+  height: 255px;
+}
+.about-us-child1,
+.about-us-child2,
+.about-us-child3 {
+  left: 513px;
+}
+.about-us-child2,
+.about-us-child3 {
+  left: 978px;
+}
+.about-us-child3 {
+  top: 2214px;
+  left: 0;
+  background-color: var(--color-gray);
+  width: 1423px;
+  height: 197px;
+}
+.about-us-child4,
+.rectangle-icon {
+  position: absolute;
+  top: 1074px;
+  left: 0;
+  width: 1410px;
+  height: 617px;
+}
+.rectangle-icon {
+  top: 1845px;
+  width: 1439px;
+  height: 369px;
+  object-fit: cover;
+}
+.vector-icon {
+  position: absolute;
+  top: 1713px;
+  left: 544px;
+  width: 28px;
+  height: 34px;
+}
+.novaliches-quezon-city {
+  position: absolute;
+  top: 1723px;
+  left: 516px;
+  font-size: 24px;
+  display: inline-block;
+  font-weight: 800;
+  width: 415px;
+  height: 35px;
+}
+.to-us {
+  color: var(--color-white);
+}
+.get-in-touch-container {
+  position: absolute;
+  top: 1656px;
+  left: 473px;
+  display: inline-block;
+  font-weight: 800;
+  width: 527px;
+  height: 91px;
+  color: var(--color-cornflowerblue-100);
+}
+.about-us-child5,
+.about-us-child6 {
+  position: absolute;
+  top: 1137px;
+  left: 977px;
+  width: 418px;
+  height: 198px;
+  object-fit: cover;
+}
+.about-us-child6 {
+  left: 513px;
+  height: 200px;
+}
+.what-we-believe-container {
+  position: absolute;
+  top: 1024px;
+  left: 483px;
+  display: inline-block;
+  font-weight: 800;
+  width: 556px;
+  height: 113px;
+  color: var(--color-cornflowerblue-100);
+}
+.about-us-child7 {
+  position: absolute;
+  top: 332px;
+  left: -2px;
+  background-color: rgba(104, 97, 97, 0.19);
+  width: 1424px;
+  height: 659px;
+}
+
+.mission {
+  margin: 0;
+}
+.goals-facilis-container,
+.mission-facilis-container,
+.vision-facilis-container {
+  position: absolute;
+  top: 1358px;
+  left: 65px;
+  font-size: var(--font-size-base);
+  display: inline-block;
+  font-weight: 600;
+  text-align: justify;
+  width: 379px;
+  height: 70px;
+}
+.goals-facilis-container,
+.vision-facilis-container {
+  top: 1361px;
+  left: 532px;
+}
+.goals-facilis-container {
+  top: 1364px;
+  left: 996px;
+}
+.about-us-child8 {
+  position: absolute;
+  top: 1137px;
+  left: 48px;
+  width: 418px;
+  height: 198px;
+  object-fit: cover;
+}
+.us {
+  color: var(--color-cornflowerblue-100);
+}
+.about-us1,
+.astraeus-was-founded {
+  position: absolute;
+  top: 141px;
+  left: 431px;
+  font-size: 96px;
+  display: inline-block;
+  font-weight: 800;
+  width: 578px;
+  height: 111px;
+}
+.astraeus-was-founded {
+  top: 622px;
+  left: 114px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #e9e1e1;
+  text-align: left;
+  width: 447px;
+  height: 204px;
+}
+.about-our-fit-container {
+  position: absolute;
+  top: 470px;
+  left: 0;
+  display: inline-block;
+  font-weight: 700;
+  color: var(--color-cornflowerblue-100);
+  width: 556px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  mix-blend-mode: normal;
+}
+.about-us {
+  position: relative;
+  background-color: var(--color-gray);
+  width: 100%;
+  height: 2411px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-32xl);
+  color: var(--color-white);
+  font-family: var(--font-lato);
+}

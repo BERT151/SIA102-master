@@ -1,0 +1,140 @@
+html{
+ background-color:#0F6292;	
+}
+body{
+   
+    font-family: Lato;
+	margin: 0;
+}
+
+.container {
+  position:relative;
+}
+  .table-scroll {
+  height:10px;
+  overflow:auto;  
+  margin-top:20px;
+}
+.container  table {
+  width:100%;
+
+}
+.container  table thead th .text {
+  position:absolute;   
+  top:-20px;
+  z-index:2;
+  height:20px;
+  width:35%;
+  border:1px solid red;
+}
+.container {
+    display: flex;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .left-container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+/*    height: 650px;*/
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 21px;
+    line-height: 0.8;
+  }
+
+  .right-container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 50%;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 21px;
+    line-height: 1;
+  }
+
+  table {
+    font-family: lato;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td, th {
+    border: 1px solid #161515;
+    text-align: left;
+    padding: 10px;
+    background-color: rgb(214, 214, 214);
+  }
+  form{
+
+    margin-top: 5px;
+  }
+
+  button{
+    border: 1px solid #000000;
+    border-radius: 10px; 
+    padding: 12px;
+    /* margin-left: 1px; */
+    /* margin-right: 10px; */
+    width: 49.4%;
+    color: white;
+  }
+
+  img{
+    height: 45px;
+    width: 100px;
+  }
+  .buttongroup{
+  position: relative;
+  top: 50px;
+  }
+  .pinfo{
+   margin-top: 30px;
+
+  }
+  .pinfo p{
+    margin-top: 20px;
+    font-size: 15px;
+  }
+.price{
+  position: relative;
+  top: 40px;
+  float: right;
+}
+.price p{
+margin: 10px;
+font-size: 20px;
+}
+  /* input {
+    margin-bottom: 100px;
+    margin-right: 100px;
+    padding-top: 1000px;
+  } */
+
+  /* HIDE RADIO */
+.form [type=radio] { 
+  /* position: absolute; */
+  /* opacity: 0; */
+  width: 10px;
+  height: 45px;
+}
+
+/* IMAGE STYLES */
+/* [type=radio] + img {
+  cursor: pointer;
+} */
+
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  /* outline: 2px solid #f00; */
+  background-color:#18A6E3;
+}

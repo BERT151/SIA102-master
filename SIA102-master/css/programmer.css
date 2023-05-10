@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200;300&family=Roboto:wght@300&family=Teko:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Teko",sans-serif;
+
+}
+    html{
+    background-color:#28292b;
+    }
+.pcontainer{
+    text-align: center;
+}
+.sec{
+  margin-top: 5%;
+background-image: url('Picture/01.png');
+background-repeat: no-repeat;
+background-size: cover;
+height: 60vh;
+}
+.pheader {
+
+    padding-top: 20px;
+    margin:auto;
+    font-size: 20px;
+    font-style: bold;
+    line-height: 50px;
+    color: #F1F6F9;
+}
+
+.pheader h3{
+   text-transform: none;
+   font-style: italic;
+}
+.pheader h1, span{
+  text-transform: uppercase;
+   
+}
+
+.pheader span{
+  color:#3E9FF9;
+}
+
+.psub-container{
+    width: 1200px;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pteams{
+  
+    margin: 10px;
+    padding: 22px;
+    width: 350px;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+    border-radius: 25px;
+   background-color: #F1F6F9;
+}
+
+.pteams:hover{
+    background:#F6F5F5;
+    border-radius: 35px;
+}
+
+.pteams img{
+  border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.names{
+  color:#666;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.name a:hover{
+    background:#fff;
+    border-radius: 25px;
+}
+
+
+.desig{
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #05BFDB;
+
+}
+
+.about{
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #666;
+    text-transform: none;
+}
+.about a:hover{
+    color:#454545;
+    border-radius: 25px;
+}
+
+.social-links {
+    font-size: 15px;
+    margin: 14px;
+}
+
+
+.social-links a:hover{
+    transform: scale(1.5);
+}
+.social-links a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+         color: #454545;
+    transition: .4s;
+}
+
+@media screen and (max-width:600px){
+    .pteams{
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-lato: Lato;
+
+  /* font sizes */
+  --font-size-32xl: 51px;
+  --font-size-base: 16px;
+  --font-size-16xl: 35px;
+
+  /* Colors */
+  --color-gray: #28292b;
+  --color-cornflowerblue-100: #3e9ff9;
+  --color-cornflowerblue-200: rgba(62, 159, 249, 0.78);
+  --color-white: #fff;
+}

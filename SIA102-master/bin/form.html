@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript" src="https://github.com/rubyeffect/easy_fill/tree/master/lib/easy_fill-0.0.1.min.js"></script>
+  <title>RFG ELITE | Appointment</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/appointment.css" />
+</head>
+
+<body>
+  <div id="container">
+    <!--This is a division tag for body container-->
+    <div id="body_header">
+      <!--This is a division tag for body header-->
+      <h1>Appointment  Form</h1>
+      <p>Make your appointments more easier</p>
+
+    </div>
+    <form action="index.html" method="post">
+      <fieldset>
+        <legend><span class="number">1</span>Your basic details</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" placeholder="Atchyut (only first names)" required pattern="[a-zA-Z0-9]+">
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email" placeholder="abc@xyz.com" required>
+
+        <label for="tel">Contact Num:</label>
+        <input type="tel" id="tel" placeholder="Include country code" name="user_num">
+
+        <label for="skype_name">Address:</label>
+        <input type="text" id="skype_name" name="skype_name" placeholder="@atchyutn" pattern="[a-zA-Z0-9]+">
+
+
+      </fieldset>
+
+      <fieldset>
+        <legend><span class="number">2</span>Appointment Details</legend>
+        <label for="appointment_for">Appointment for:</label>
+        <select id="appointment_for" name="appointment_for" required>
+          <option value="coffee">Kick Boxing</option>
+          <option value="meeting">Yoga</option>
+          <option value="Business">Plates</option>
+          <option value="lunch">Running</option>
+          <option value="skype">Biking</option>
+          <option value="movie">Jogging</option>
+          <option value="couple_date">Push Up</option>
+        </select>
+        <label for="appointment_description">Appointment Description:</label>
+        <textarea id="appointment_description" name="appointment_description" placeholder="I wish to get an appointment to skype for resolving a software problem."></textarea>
+        <label for="date">Date:</label>
+        <input type="date" name="date" value="" required></input>
+        <br>
+        <label for="time">Time:</label>
+        <input type="time" name="time" value="" required></input>
+        <br>
+        <label for="duration">How Long??(Minutes)</label>
+        <input type="radio" name="duration" value="30" checked> 30
+        <input type="radio" name="duration" value="60"> 60
+        <input type="radio" name="duration" value="90"> 90
+        <input type="radio" name="duration" value="more"> more
+      </fieldset>
+      <button type="submit">Book for Appointment</button>
+    </form>
+    <button type="home"><a href="index.html">Back to Home</a></button>
+  </div>
+</body>
+
+</html>

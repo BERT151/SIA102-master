@@ -1,0 +1,281 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200;300&family=Roboto:wght@300&family=Teko:wght@300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+
+body{
+    height: 100vh;
+
+    background: #28292b;
+}
+.holder{
+    align-items: center;
+    padding-right: 90px;
+    justify-content: right;
+}
+.left{
+
+    margin-left: 5%;
+    width: 350px;
+    height: 600px;
+    background: #fff;
+    float: left;
+    padding: 30px 40px;
+}
+.wrapper{
+    margin-top: 10%;
+    margin-left: 35%;
+    margin-bottom: 10%;
+    width: 850px;
+    height: 600px;
+    background: #fff;
+    position: relative;
+    padding: 30px 40px;
+}
+
+.border-design{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.border-design .c1,
+.border-design .c2,
+.border-design .c3,
+.border-design .c4,
+.border-design .c5{
+    width: 100px;
+    height: 10px;
+}
+
+.c1 {
+    background: #ec8e1d;
+
+}
+
+.c2{
+    background: #27aae2;
+}
+
+.c3{
+    background: #fef200;
+}
+
+.c4{
+    background: #d25a29;
+}
+.c5 {
+    background: rgb(255, 4, 209);
+
+}
+
+.border-design.top{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.border-design.bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    flex-direction: row-reverse;
+}
+
+.order-header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    
+}
+
+.logo span{
+    font-weight: 400;
+    color: blue;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 2px;
+}
+
+.order-number, .order-status{
+    display: flex;
+    justify-content: space-between;
+}
+.order-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.order-number{
+    padding: 10px 45px 0 0;
+    
+}
+
+.order-status{
+    padding: 7px 0px 0px 30px;
+    
+}
+
+.order-number h3, .order-status h3{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+
+.billing-detail{
+    margin-top: 15px;
+}
+
+.billing-detail p:nth-child(1),
+.billing-detail p:nth-child(2){
+    text-transform: uppercase;
+}
+
+.billing-detail p:nth-child(1){
+    font-size: 15px;
+
+}
+
+.billing-detail p:nth-child(2){
+    font-size: 12px;
+    font-weight: 700;
+    width: 150px;
+    border-bottom: 1px solid black;
+}
+
+.billing-detail p:nth-child(3),
+.billing-detail p:nth-child(4),
+.billing-detail p:nth-child(5){
+    font-size: 15px;
+}
+
+.billing-detail p span{
+    font-weight: 600;
+}
+
+table{
+    border-collapse: collapse;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+table thead tr td{
+    text-align: center;
+    font-weight: 600;
+    padding: 8px 5px;
+}
+
+table tbody td{
+
+
+    overflow: auto;
+    padding: 7px 5px;
+    text-align: center;
+}
+table tbody{
+    height: 10px;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: #f0f0f0;
+}
+table tbody tr:nth-child(even){
+    background: #fcfcfc;
+    border-bottom: 1px solid #b4b4b4;
+    border-top: 1px solid #b4b4b4;
+}
+
+.total-section{
+    position: absolute;
+    right: 40px;
+    font-size: 12px;
+    width: 160px;
+    margin-top: 5px;
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+.sub, .tax, .sf, .total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+ }
+
+ .total{
+    border-top: 1px solid #646464;
+    padding-top: 5px;
+ }
+
+ .sub p:nth-child(1),
+ .tax p:nth-child(1),
+ .sf p:nth-child(1),
+ .total p{
+        font-weight: 600;
+        color: #6DA9E4;
+ }
+
+ .payment-terms{
+    position: absolute;
+    bottom: 30px;
+    width: 45%;
+ }
+
+ .payment-detail{
+    margin-bottom: 8px;
+ }
+
+ .payment-detail p:nth-child(1){
+    font-size: 15px;
+    font-weight: 700;
+    width: 150px;
+ }
+
+ .payment-detail p:nth-child(2),
+ .payment-detail p:nth-child(3),
+ .payment-detail p:nth-child(4){
+    font-size: 15px;
+ }
+
+ .payment-detail p span{
+    font-weight: 600;
+ }
+
+ .terms p:nth-child(1){
+    font-size: 15px;
+    font-weight: 700;
+    width: 150px;
+ }
+
+ .terms{
+    margin-bottom: 20px;
+ }
+
+ .terms p:nth-child(2){
+    font-size: 15px;
+ }
+
+ .message p{
+    font-size: 15px;
+    font-weight: 700;
+ }
+p{
+    margin-bottom: 0 !important;
+}

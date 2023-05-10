@@ -1,0 +1,117 @@
+body{
+	height: 100%;
+	background-color: #FFFFFF;
+	margin: 0;
+	}
+
+html {
+	height: 100%;
+}	
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background: #212529;
+    padding:20px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+header span{
+	color: white;
+	font-size: 20px;
+	text-decoration: none !important;
+}
+header span:hover{
+    color:#a0bcc2;
+}
+.navbar .ds:hover{
+	color: red;
+}
+header .navbar a{
+	text-transform: uppercase;
+    font-size: 20px;
+    padding:0 1.5rem;
+	text-decoration: none !important;
+    color:white;
+}
+
+header .navbar a:hover{
+   color:#a0bcc2;
+}
+
+header .icons a{
+    font-size: 25px;
+    color:#333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color: #f4f4f4;
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 30px;
+    color:#333;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+.db_container{
+	background-color: #FFEEAD;
+	border: solid 1px;
+	min-height: 100%;
+	width: 15%;
+}
+
+.db_logo {
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.db_sidebar_menus{
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+li{
+	list-style-type: none;
+}
+
+.menuText{
+	margin: auto;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+
+.logout, span{
+	color: black;
+
+}
+
+
+.db_content_container{
+	text-align: center;
+}
