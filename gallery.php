@@ -1,6 +1,6 @@
 <?php
 include('includes/head.php');
-include('includes/preloader.php');
+
 include('includes/header.php');
 ?>
 <main>
@@ -26,10 +26,10 @@ include('includes/header.php');
                 <div class="col-lg-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img"
-                            style="background-image: url(assets/img/gallery/gallery1.png);"></div>
+                            style="background-image: url(./images/gallery/1.jpg);"></div>
                         <div class="overlay">
                             <div class="overlay-content">
-                                <a href="gallery.html"><i class="ti-arrow-top-right"></i></a>
+                                <a href="gallery.php"><i class="ti-arrow-top-right"></i></a>
                                 <h3>Best fitness gallery</h3>
                                 <p>Fitness, Body</p>
                             </div>
@@ -41,10 +41,10 @@ include('includes/header.php');
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="box snake mb-30">
                                 <div class="gallery-img small-img"
-                                    style="background-image: url(assets/img/gallery/gallery2.png);"></div>
+                                style="background-image: url(./images/gallery/2.jpg);"></div>
                                 <div class="overlay">
                                     <div class="overlay-content">
-                                        <a href="gallery.html"><i class="ti-arrow-top-right"></i></a>
+                                        <a href="gallery.php"><i class="ti-arrow-top-right"></i></a>
                                         <h3>Best fitness gallery</h3>
                                         <p>Fitness, Body</p>
                                     </div>
@@ -54,10 +54,10 @@ include('includes/header.php');
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="box snake mb-30">
                                 <div class="gallery-img small-img"
-                                    style="background-image: url(assets/img/gallery/gallery3.png);"></div>
+                                style="background-image: url(./images/gallery/6.jpg);"></div>
                                 <div class="overlay">
                                     <div class="overlay-content">
-                                        <a href="gallery.html"><i class="ti-arrow-top-right"></i></a>
+                                        <a href="gallery.php"><i class="ti-arrow-top-right"></i></a>
                                         <h3>Best fitness gallery</h3>
                                         <p>Fitness, Body</p>
                                     </div>
@@ -67,10 +67,10 @@ include('includes/header.php');
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="box snake mb-30">
                                 <div class="gallery-img small-img"
-                                    style="background-image: url(assets/img/gallery/gallery4.png);"></div>
+                                style="background-image: url(./images/gallery/8.jpg);"></div>
                                 <div class="overlay">
                                     <div class="overlay-content">
-                                        <a href="gallery.html"><i class="ti-arrow-top-right"></i></a>
+                                        <a href="gallery.php"><i class="ti-arrow-top-right"></i></a>
                                         <h3>Best fitness gallery</h3>
                                         <p>Fitness, Body</p>
                                     </div>
@@ -80,16 +80,19 @@ include('includes/header.php');
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="box snake mb-30">
                                 <div class="gallery-img small-img"
-                                    style="background-image: url(assets/img/gallery/gallery5.png);"></div>
+                                style="background-image: url(./images/gallery/9.jpg);"></div>
                                 <div class="overlay">
                                     <div class="overlay-content">
-                                        <a href="gallery.html"><i class="ti-arrow-top-right"></i></a>
+                                        <a href="gallery.php"><i class="ti-arrow-top-right"></i></a>
                                         <h3>Best fitness gallery</h3>
                                         <p>Fitness, Body</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
+                        
+                        
                     </div>
                 </div>
             </div>
