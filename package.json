@@ -1,0 +1,12 @@
+{
+  "name": "appointment",
+  "version": "1.0.0",
+  "description": "A\r P\r P\r O\r I\r N\r T\r M\r E\r N\r T",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
