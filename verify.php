@@ -17,9 +17,6 @@ require "include/mail.php";
 
 		switch ($mode) {
 			case 'enter_email':
-
-					
-
 				// code...
 					$fname   =  $_POST['fname'];
 					$lname      =  $_POST['lname'];
@@ -77,8 +74,8 @@ require "include/mail.php";
 					 	$errors['p1'] = "Password is required";
 					 // array_push($errors, "Password is required"); 
 					 }
-					 if (strlen($password_1) < 6 || !$number || !$uppercase || !$lowercase || !$specialChars) { 
-					 	$errors['ps1'] = "Password must be at least 6 characters in length and must contain at least one number, one upper case letter, one lower case letter and one special character.";
+					 if (strlen($password_1) <= 7 || !$number || !$uppercase || !$lowercase || !$specialChars) { 
+					 	$errors['ps1'] = "Password must be at least 8 characters and have at least 1 number, 1 upper case letter, 1 lower case letter and 1 special character.";
 					 }
 					 if (empty($password_2)) { 
 					 	$errors['p2'] = "Password is required";

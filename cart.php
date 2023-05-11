@@ -93,6 +93,24 @@
           $image_data = $row['photo'];
           $binary_data = base64_decode($image_data);
           $img_src = 'data:image/png;base64,' . base64_encode($binary_data);
+
+
+          $supply_id = $row['supply_id'];
+          $outqty = mysqli_query($con, "SELECT SUM(qty) AS OUT_qty FROM inventory where inventory.stock_type = '2' and inventory.supply_id= '$supply_id' ");
+
+          if(mysqli_num_rows($outqty) > 0){
+          foreach( $outqty as $fetch_out) :
+          $out = $fetch_out["OUT_qty"];
+
+          $inqty = mysqli_query($con, "SELECT SUM(qty) AS IN_qty FROM inventory where inventory.stock_type = '1' and inventory.supply_id='$supply_id' ");
+         
+          if(mysqli_num_rows($inqty) > 0){
+          foreach( $inqty as $fetch_in) :
+
+          $in = $fetch_in["IN_qty"];
+
+ 
+          $available = $fetch_in["IN_qty"] - $fetch_out["OUT_qty"];
         ?>
 
 
@@ -103,10 +121,14 @@
                         <div class="content">
                             <input type="hidden" name="Product_ID" class="Product_ID" value="<?php echo $row["supply_id"]; ?>">
                             <input type="checkbox" class="checkItem" name="check[]" value="<?php echo $row["supply_id"]; ?>" style="float:right;">
-                            <h3><?php echo $row['name']?></h3>
+                            <h3><a href="itempage.php?id=<?php  echo $row["supply_id"]; ?>"><?php echo $row['name']?></h3></a>
                             <p class="unit">₱<input type="number" name="price" class="price" value="<?php echo $row["price"]; ?>" readonly></p>
-                            <p class="unit">Quantity: <input type="number" id="qty<?php echo $row['supply_id']; ?>" name="qty<?php echo $row['supply_id']; ?>" class="qty" placeholder="<?php echo $row['Qty']?>" min="1" max="<?php echo $row['qty']?>" value="<?php echo $row['Qty']; ?>" data-price="<?php echo $row['price']; ?>" class="input" /></p>
-
+                            <p class="unit">Quantity: <input type="number" id="qty<?php echo $row['supply_id']; ?>" name="qty<?php echo $row['supply_id']; ?>" class="qty" placeholder="<?php echo $row['Qty']?>" min="1" max="<?php echo $available;?>" value="<?php echo $row['Qty']; ?>" data-price="<?php echo $row['price']; ?>" class="input" /></p>
+                                    <?php 
+                                             endforeach;
+                                      }
+                                               endforeach;
+                                      }?>
                             <p class="btn-area">
                                 <i class="fa fa-trash"></i>
                                 <span class="btn2">
@@ -142,7 +164,6 @@
                 <hr>
                 <p><span>Total</span><span class="total-value" id="total">₱<?php echo number_format((float) $total + $vat + '50', 2);?></span></p>
                 <a href="register.php?id=<?php echo $Account_ID?>"><i class="fa fa-shopping-cart"></i>Add Address</a>
-                <br>
                 <?php
                 if($no_of_user_products>0 ){ 
                 ?>

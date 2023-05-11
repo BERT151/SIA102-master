@@ -63,7 +63,7 @@ require_once('connection.php');
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-3">
-                        <a href="#" class="btn wantToWork-btn f-right">More Categories</a>
+                        <a href="productstore.php" class="btn wantToWork-btn f-right">More Products</a>
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@ require_once('connection.php');
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-3">
-                        <a href="#" class="btn wantToWork-btn f-right">More Services</a>
+                        <a href="moreService.php" class="btn wantToWork-btn f-right">More Services</a>
                     </div>
                 </div>
             </div>
@@ -387,7 +387,7 @@ require_once('connection.php');
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-2 col-md-3">
-                    <a href="#" class="btn wantToWork-btn f-right">More Services</a>
+                    <a href="moreStaff.php" class="btn wantToWork-btn f-right">More Services</a>
                 </div>
             </div>
         </div>

@@ -233,6 +233,7 @@ body{
     font-weight: 900;
     border:none;
     width: 100%;
+    margin-bottom: 10px;
 }
 .right-bar button{
     background-color: #0F6292;

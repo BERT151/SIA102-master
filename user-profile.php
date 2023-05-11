@@ -83,23 +83,24 @@ if(isset($_SESSION['id'])){
             $City = $row['City'];
             $Zip_Code = $row['Zip_Code'];
             $Account_Image = $row['Account_Image'];
+
+             $image_data = $row['Account_Image'];
+             $binary_data = base64_decode($image_data);
+             $img_src = 'data:image/png;base64,' . base64_encode($binary_data);
             
 
-            if($Account_Image == 1) {
-                $fileName = 'profile-pictures/profile' .$Account_ID. '.*';
-                $fileInfo = glob($fileName);
-                $fileExt = explode(".", $fileInfo[0]);
-                $fileActualExt = $fileExt[1];
-                echo '<img src="profile-pictures/profile' .$Account_ID. '.' .$fileActualExt. '?' .mt_rand(). '" alt="" class="rounded-circle mt-5" width="120px">';
+           
+                // $fileName = 'profile-pictures/profile' .$Account_ID. '.*';
+                // $fileInfo = glob($fileName);
+                // $fileExt = explode(".", $fileInfo[0]);
+                // $fileActualExt = $fileExt[1];
+                // echo '<img src=" $img_src" alt="" class="rounded-circle mt-5" width="120px">';
                 echo '<form action="includes/deleteProfile.php" method="POST">';
                 echo '<br/>';
                 echo '<button type="submit" name="submit-delete" class="del-btn">Delete Profile Image</button>';
                 echo '<br/>';
                 echo '</form>';
-            }else{
-                echo ' ';
-            }
-
+     
            echo ' <form action="upload.php" method="POST" enctype="multipart/form-data" class="choose-image">';
                   echo ' <input type="file" name="file" class="custome-file">';
                    echo ' <button type="submit" name="submit">Upload</button>  ';

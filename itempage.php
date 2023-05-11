@@ -112,7 +112,6 @@
           $img_src = 'data:image/png;base64,' . base64_encode($binary_data);
       ?>
 	<div class="content">
-	<form method="post" action=cart/cart_add.php?id=<?php  echo $proditems["supply_id"]; ?>>
 	<a  href="itempage.php?id=<?php  echo $proditems["supply_id"]; ?>">
 	<img src="<?php echo $img_src; ?>" alt="Images">
 	<div class="desc">
@@ -125,15 +124,12 @@
 	<?php
         }
         else{
-        if(check_if_added_to_cart($proditems["id"])){
-        echo '<a class="cartdis" href="#" disabled>Added to cart</a>';
-        }else{
+        
 			?>
-     <button>Add to cart</button>
-		</form>
+   
       </div>
 	  	<?php
-		}
+		
 		}
 		endforeach;
 		}

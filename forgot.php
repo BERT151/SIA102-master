@@ -26,7 +26,7 @@ require "include/mail.php";
 					$_SESSION['forgot']['email'] = $email;
 					send_email($email);
 					send_mail($recipient,$subject,$message);
-					header("Location:  ../forgot.php?mode=enter_code");
+					header("Location:  forgot.php?mode=enter_code");
 					die;
 				}
 				break;
@@ -39,7 +39,7 @@ require "include/mail.php";
 				if($result == "the code is correct"){
 
 					$_SESSION['forgot']['code'] = $code;
-					header("Location:  ../forgot.php?mode=enter_password");
+					header("Location:  forgot.php?mode=enter_password");
 					die;
 				}else{
 					$error[] = $result;
@@ -54,7 +54,7 @@ require "include/mail.php";
 				if($password !== $password2){
 					$error[] = "Passwords do not match";
 				}elseif(!isset($_SESSION['forgot']['email']) || !isset($_SESSION['forgot']['code'])){
-					header("Location:  ../forgot.php");
+					header("Location:  forgot.php");
 					die;
 				}else{
 					
@@ -65,7 +65,7 @@ require "include/mail.php";
 
 					echo "<script>
 					alert('New Password Complete');
-					window.location.href=' ../login.php';
+					window.location.href=' login.php';
 					</script>";
 					die;
 				}

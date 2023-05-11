@@ -115,6 +115,15 @@ if(isset($_POST['order_btn'])){
          </div>
          </div>
       </div>, Pls wait for your order to arrived, Thank you.");
+
+      $update_query="update inventory SET qty = qty -$qty WHERE supply_id = '$test'";
+      $update_query_result=mysqli_query($con,$update_query) or die(mysqli_error($con));
+
+      require 'include/connection.php';
+      $user_id=$_SESSION['id'];
+      $zero = 0;
+      $delete_query="delete P from cart P LEFT JOIN inventory I ON P.Item_ID = I.supply_id WHERE I.qty = '$zero' Or Account_ID = '$user_id' ";
+      $delete_query_result=mysqli_query($con,$delete_query) or die(mysqli_error($con));
 		   };
 
 
@@ -140,6 +149,7 @@ if(isset($_POST['order_btn'])){
          </div>
       </div>
       ";
+
    }
 }
 

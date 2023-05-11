@@ -12,7 +12,6 @@ require "connection.php";
 
         $user_id=$_SESSION['id'];
         
-
 		$user_products_query="SELECT * FROM cart INNER JOIN products ON cart.Item_ID = products.id INNER JOIN inventory ON cart.Item_ID = inventory.supply_id where cart.Account_ID='$user_id' and inventory.qty != 0  Group By inventory.supply_id ";
 		$user_products_result=mysqli_query($con,$user_products_query) or die(mysqli_error($con));
 		$no_of_user_products= mysqli_num_rows($user_products_result);
@@ -54,14 +53,21 @@ require "connection.php";
         $wcounter = ltrim($wcounter, "0");  
 
 
+        $usery="select Account_Image from account where Account_ID='$user_id'";
+        $usert=mysqli_query($con,$usery) or die(mysqli_error($con));
+        $nos=mysqli_fetch_array($usert);
 
 
-		$usery="select Account_Image from account where Account_ID='$user_id'";
-		$usert=mysqli_query($con,$usery) or die(mysqli_error($con));
-		$nos=mysqli_fetch_array($usert);
+          $image_data = $nos['Account_Image'];
+          $binary_data = base64_decode($image_data);
+          $img_src = 'data:image/png;base64,' . base64_encode($binary_data);
+
           $sql = mysqli_query($con, "SELECT * FROM account WHERE Account_ID = '$user_id'");
           $nos= mysqli_fetch_assoc($sql);
           }
+
+
+          
         ?>
 <html>
 <head>
@@ -156,7 +162,7 @@ require "connection.php";
            <span><?php echo $nos['Fname']. " " . $nos['Lname'] ?></span>
 
 	<div class="mpicture">
-		<img src=" Picture/<?php echo $nos["Account_Image"]; ?>" alt="Avatar">
+		<img src="<?php echo $img_src; ?>" alt="Avatar">
 	</div>
 
 	<div class="contentm">

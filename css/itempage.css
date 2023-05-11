@@ -119,9 +119,15 @@ h5 {
   margin-left:  40%;
 }
 	.cartdis{
-
+  width: 100%;
+  padding: 10px;
   border: none;
   outline: none;
+  color: white;
+  margin-top: 10%;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 20px;
    background:#0A2647;
   }
  .buy{

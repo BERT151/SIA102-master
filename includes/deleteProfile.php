@@ -3,6 +3,7 @@ session_start();
 require_once '../connection.php';
 $id = $_SESSION['id'];
 
+
 $fileName = '../profile-pictures/profile' .$id. '*';
 $fileInfo = glob($fileName);
 $fileExt = explode(".", $fileInfo[0]);
@@ -16,7 +17,7 @@ if(!unlink($file)) {
     echo 'File was deleted.';
 }
 
-$sql = "UPDATE account SET Account_Image = 0 WHERE Account_ID = $id;";
+$sql = "UPDATE account SET Account_Image = DEFAULT WHERE Account_ID = $id;";
 mysqli_query($con, $sql);
 
 header('location: ../user-profile.php');
