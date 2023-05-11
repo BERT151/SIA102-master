@@ -2,7 +2,6 @@
 <?php
 
 include('includes/head.php');
-include('includes/preloader.php');
 include('includes/header.php');
 ?>
 
@@ -196,6 +195,7 @@ if(isset($_SESSION['id'])){
 
 
     </main>
+    
 <?php
 include 'includes/footer.php';
 include 'includes/scripts.php';
