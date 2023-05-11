@@ -1,7 +1,6 @@
 <?php
     require_once('connection.php');
     include('includes/head.php');
-    include('includes/preloader.php');
     include('includes/header.php');
 ?>
 
